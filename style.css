@@ -717,7 +717,7 @@ header {
 
 .img-gallery img{
 	width: 100%;
-	cursor: pointer
+	cursor: pointer;
 }
 
 
@@ -738,6 +738,7 @@ header {
 	display: none;
 	align-items: center;
 	justify-content: center;
+	z-index: 100;
 	
 }
 
@@ -748,9 +749,9 @@ header {
 
 .full-img span{
 	position: absolute;
-	top: 5%;
+	top: 10%;
 	right: 5%;
-	font-size; 30px;
-	color: #fff;
+	font-size: 30px;
+	color: #ffffff;
 	cursor: pointer;
 }

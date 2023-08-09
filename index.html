@@ -45,7 +45,7 @@
         </div>
         <ul class="menu-items">
           <li><a href="#about">About</a></li>
-          <li><a href="#my-works">Portfolio</a></li>
+          <li><a href="#my-works">Gallery</a></li>
           <li><a href="#contact-me">Contact</a></li>
         </ul>
       </div>
@@ -110,7 +110,7 @@
               </div>
             <div class="work-arrow-2">
               <p>
-                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+                <a href="#my-works">Check out my Gallery <i class="fas fa-arrow-down"></i></a>
               </p>
             </div>
           </div>
@@ -121,70 +121,57 @@
   <section id="my-works">
     <div class="portfolio">
       <div class="proj-heading">
-        <h1>Portfolio</h1>
+        <h1>Gallery</h1>
       </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-          <img src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png">
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>Restaurant Website UI</h2>
-            <p>Build Using HTML,CSS,JS</p>
-            <button><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
-          </button>
-          </div>
-        </div>
-        
-        <div class="proj-2">
-          <img src="https://i.postimg.cc/FR848bSm/Screenshot-76.png">
-          <div class="proj2-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <h2>Profile Card</h2>
-            <p>Build Using HTML,CSS</p>
-            <button><a href="https://github.com/sanketbodke/CodePen" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
-          </button>
-          </div>
-          
-        </div>
-        <!--<div class="more-work">
-          <p>
-            More
-          </p>
-          <a href="https://codepen.io/sanketbodke" target="blank">CodePen</a>
-        </div> -->
-      </div>
-    </div>
-  </section>	
-	
-	<div class="full-img" id="fullImgBox">
-		<img src = "" id="fullImg">
+      <div class="Gallery">
+                
+		  
+		  
+		  <div class="full-img" id="fullImgBox">
+		<img src = "Pics/TeamNepal.jpg" id="fullImg">
 		<span onclick="closeFullImg()">X</span>
 	</div>
 	
 	
 	
 	<div class="img-gallery">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()">
-		<img src="" onclick="openFullImg()"> <!-- 13:38 -->
+		<img src="Pics/TeamNepal.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/Disney.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/GermanCastle.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/Myteam.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/AshyaPose.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/Damm.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/Penguin.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/Pirate.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/DonalDuck.jpg" onclick="openFullImg(this.src)"> 
+		<img src="Pics/Suvarnabhumi.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/LiftOff.jpg" onclick="openFullImg(this.src)">
+		<img src="Pics/BunnyHat.jpg" onclick="openFullImg(this.src)">
+		<!-- 13:38 -->
 	</div>
+	
+		  <script>
+		  			
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+	fullImgBox.style.display = "flex";
+	fullImg.src = pic;
+	
+}
+			  
+function closeFullImg(){
+	fullImgBox.style.display = "none";
+}
+
+		  </script> 
+		  
+        
+      </div>
+    </div>
+  </section>	
+	
 	
 	
 	
@@ -248,6 +235,8 @@
       });
     });
   </script>
+	
+	
 </body>
 
 </html>
